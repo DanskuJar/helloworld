@@ -1,9 +1,8 @@
 let message: string = 'Foo bar';
 let thisnumber: number = 4;
-console.log(message.toLowerCase());
-console.log(thisnumber);
+
 if (thisnumber < 5) {
-    console.log(message);
+    console.log(message.toLowerCase());
 } else {
     console.log(thisnumber);
 }
