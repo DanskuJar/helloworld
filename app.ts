@@ -1,8 +1,6 @@
-let message: string = 'Foo bar';
-let thisnumber: number = 4;
-
-if (thisnumber < 5) {
-    console.log(message.toLowerCase());
-} else {
-    console.log(thisnumber);
+let thisnumber: number = 7;
+function multiply (a: number, b: number) {
+    return a * b
 }
+
+console.log(multiply(thisnumber,2))
