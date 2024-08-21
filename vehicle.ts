@@ -1,8 +1,17 @@
 class Vehicle {
-    brand: string;
-    numWheels: number;
+    private brand: string = "Kawasaki";
+
+    public constructor(brand: string) {
+        this.brand = brand;
+    }
+    public getBrand(): string {
+        return this.brand;
+    } 
+    private numWheels: number = 2;
+    
+    public getNumWheels(): number {
+        return this.numWheels
+    }
 }
-const vehicle = new Vehicle();
-vehicle.brand = "Kawasaki";
-vehicle.numWheels = 2;
-console.log(vehicle.numWheels);
+const vehicle = new Vehicle("motorBike");
+console.log(vehicle.getNumWheels());
