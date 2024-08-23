@@ -10,8 +10,9 @@ class Vehicle implements Maintenance {
     
     private brand: string = "Kawasaki";
     
-    public constructor(protected readonly brand: string, protected readonly numWheels: number) {
-        this.brand = brand;
+    public constructor(protected readonly b: string, protected readonly n: number) {
+        this.brand = b;
+        this.numWheels = n;
     }
 
     public getBrand(): string {
@@ -23,5 +24,5 @@ class Vehicle implements Maintenance {
         return this.numWheels;
     }
 }
-const vehicle = new Vehicle("motorBike");
+const vehicle = new Vehicle("motorBike", 2);
 console.log(vehicle.estimateNextMaintenance());
