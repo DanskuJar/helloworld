@@ -24,5 +24,14 @@ class Vehicle implements Maintenance {
         return this.numWheels;
     }
 }
-const vehicle = new Vehicle("motorBike", 2);
-console.log(vehicle.estimateNextMaintenance());
+
+class motorBike extends Vehicle {
+    
+    private cc: number = 5;
+    
+    public getCc(): number {
+        return this.cc;
+    }
+}
+const vehicle = new motorBike("motorBike", 2);
+console.log(vehicle.getCc());
