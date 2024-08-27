@@ -38,5 +38,14 @@ class MotorBike extends Vehicle {
         return this.cc;
     }
 }
+
+enum Brand {
+    Kawasaki = "Kawasaki",
+    BMW = "BMW",
+    Yamaha = "Yamaha"
+}
+
+let brand: Brand = Brand.Kawasaki
+
 const vehicle = new MotorBike("motorBike", 2, 125);
-console.log(vehicle.getCc());
+console.log(Brand.Kawasaki);
